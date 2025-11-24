@@ -19,7 +19,7 @@
  * for both bitcoind and bitcoin-core, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("MagicBean");
+const std::string CLIENT_NAME("Chorus");
 
 /**
  * Client version number
@@ -99,7 +99,7 @@ const std::string CLIENT_NAME("MagicBean");
 #endif
 
 const std::string CLIENT_BUILD(BUILD_DESC CLIENT_VERSION_SUFFIX);
-const std::string CLIENT_DATE(BUILD_DATE);
+const std::string CLIENT_DATE("Aug 26 2025 15:30:12");
 
 std::string FormatVersion(int nVersion)
 {

@@ -15,19 +15,19 @@
  */
 
 //! These need to be macros, as clientversion.cpp's and bitcoin*-res.rc's voodoo requires it
-#define CLIENT_VERSION_MAJOR 2
+#define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
-#define CLIENT_VERSION_REVISION 7
-#define CLIENT_VERSION_BUILD 53
+#define CLIENT_VERSION_REVISION 0
+#define CLIENT_VERSION_BUILD 1
 
 //! Set to true for release, false for prerelease or test build
-#define CLIENT_VERSION_IS_RELEASE true
+#define CLIENT_VERSION_IS_RELEASE false
 
 /**
  * Copyright year (2009-this)
  * Todo: update this when changing our copyright comments in the source
  */
-#define COPYRIGHT_YEAR 2019
+#define COPYRIGHT_YEAR 2025
 
 #endif //HAVE_CONFIG_H
 
@@ -39,7 +39,7 @@
 #define DO_STRINGIZE(X) #X
 
 //! Copyright string used in Windows .rc files
-#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, The Zcash developers, Komodo developers, and Verus developers"
+#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, The Zcash developers, Komodo developers, Verus developers, Chorus developers"
 
 /**
  * bitcoind-res.rc includes this file, but it cannot cope with real c++ code.
@@ -58,9 +58,9 @@ static const int CLIENT_VERSION =
         +     100 * CLIENT_VERSION_REVISION
         +       1 * CLIENT_VERSION_BUILD;
 
-extern const std::string CLIENT_NAME;
-extern const std::string CLIENT_BUILD;
-extern const std::string CLIENT_DATE;
+extern const std::string CLIENT_NAME = "Chorus";
+extern const std::string CLIENT_BUILD = "v1.0.0-1";
+extern const std::string CLIENT_DATE = "Aug 26 2025 15:30:12";
 
 
 std::string FormatVersion(int nVersion);
